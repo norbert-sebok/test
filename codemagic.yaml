@@ -3,6 +3,9 @@ workflows:
     name: Status check
     instance_type: linux_x2
     max_build_duration: 5
+    triggering:
+      events:
+        - push
     scripts:
       - name: Hold
         script: sleep 30
